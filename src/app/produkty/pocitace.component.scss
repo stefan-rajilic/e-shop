@@ -1,0 +1,33 @@
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 4%;
+}
+
+.nameProducts {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.descriptionProducts {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.card {
+  margin: 7px;
+  width: 10rem;
+  height: 20rem;
+  border: solid 2px;
+}
+.card-img-top {
+  width: 8rem;
+  height: 8rem;
+  margin-top: 6px;
+
+}
+
+

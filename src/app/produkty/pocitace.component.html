@@ -1,0 +1,33 @@
+<div *ngIf="categories" class="descriptionCategory">
+  <h1 class="nameProducts">{{categories.category.name}}</h1>
+  <p class="descriptionProducts">{{categories.category.description}}</p>
+</div>
+
+<div class="productContainer">
+
+
+    <div *ngFor="let product of products" class="card text-center" style="width: 18rem;">
+
+      <div class="productInside">
+        <img [src]="'http://kodytek.cz:8080/rest-api/' + product.images[0].miniaturePath" class="card-img-top" alt="...">
+        <div class="card-body">
+
+          <a (click)="getProduktID(product.id)" [queryParams]="{id: product.id}" routerLink="/productPage" class="card-title">{{product.title}}</a>
+
+          <p>{{product.price / 100}},-kč</p>
+
+          <!-- <pclass="card-text"></p> -->
+
+          <a href="#" class="btn btn-primary ">Do košíku</a>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+
+

@@ -1,0 +1,26 @@
+.productPageImg {
+  width: 30rem;
+  height: 22.5rem;
+}
+
+.productPageImgDes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.productPageDes {
+  text-align: center;
+  width: 50rem;
+}
+
+.productPageTitKos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2%;
+}
+
+.btn btn-secondary {
+  height: 3rem;
+}

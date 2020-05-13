@@ -1,0 +1,16 @@
+<div *ngIf="product">
+  <div class="productPageTitKos">
+    <h1 class="productPageTit">{{product.title}}</h1>
+    <button type="button" class="btn btn-secondary">Do košíku</button>
+  </div>
+
+  <div class="productPageImgDes">
+    <img [src]="'http://kodytek.cz:8080/rest-api/' + product.images[0].path" class="productPageImg" alt="...">
+    <p class="productPageDes">{{product.description}}</p>
+  </div>
+
+  <p>{{product.ratings}}</p>
+
+
+</div>
+
