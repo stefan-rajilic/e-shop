@@ -8,6 +8,7 @@ import { KlavesniceComponent } from './kosik/klavesnice.component';
 import { PocitaceComponent } from './produkty/pocitace.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ProductPageComponent } from './product-page/product-page.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ProductPageComponent } from './product-page/product-page.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    NgxPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

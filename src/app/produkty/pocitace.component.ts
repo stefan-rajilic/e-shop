@@ -14,6 +14,7 @@ export class PocitaceComponent implements OnInit {
 
   public categories: CategoryInfo;
   public products: Product[];
+  p: number = 1;
 
   constructor(private hhtpClient: HttpClient, private category2: CagegoryService, private route: ActivatedRoute, private router: Router) { }
 

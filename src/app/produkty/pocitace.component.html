@@ -10,7 +10,8 @@
 
       <div class="productInside">
         <img [src]="'http://kodytek.cz:8080/rest-api/' + product.images[0].miniaturePath" class="card-img-top" alt="...">
-        <div class="card-body">
+
+        <div class="card-body" *ngFor="let product of products | paginate: {itemsPerPage: 1, currentPage: p}; let i = index">
 
           <a (click)="getProduktID(product.id)" [queryParams]="{id: product.id}" routerLink="/productPage" class="card-title">{{product.title}}</a>
 
@@ -24,10 +25,12 @@
 
     </div>
 
-
-
-
   </div>
+
+<div class="paginizace">
+
+  <pagination-controls (pageChange) = "p = $event"></pagination-controls>
+</div>
 
 
 
