@@ -14,7 +14,7 @@ export class ProductPageComponent implements OnInit {
 
   public product: Product;
 
-  constructor(private httpClient: HttpClient, private categorySer: CagegoryService, private route: ActivatedRoute) { }
+  constructor(private httpClient: HttpClient, private categorySer: CagegoryService, private route: ActivatedRoute, private router: Router) { }
 
 
 
@@ -27,6 +27,10 @@ export class ProductPageComponent implements OnInit {
             this.product = products;
           });
       });
+  }
+
+  addToCart(id: number) {
+    this.router.navigate(['/kosik'], {queryParams: {id}});
   }
 
 }
